@@ -1,3 +1,4 @@
+/*
 package stepDefinitions;
 
 import common.*;
@@ -33,3 +34,5 @@ public class StepDefinitions {
 	}
 
 }
+
+ */

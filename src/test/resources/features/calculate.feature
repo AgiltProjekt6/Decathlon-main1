@@ -15,4 +15,3 @@ Feature: Decathlon
       | "Decathlon 100M" |    250 |    16 |              |
       | "Decathlon 100M" |    220 |     0 |              |
       | "Decathlon 100M" |   1000 |  1606 |              |
-

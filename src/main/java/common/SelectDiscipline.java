@@ -1,5 +1,6 @@
 package common;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 import decathlon.Deca100M;
@@ -14,6 +15,7 @@ import decathlon.DecaShotPut;
 import decathlon.DecaPoleVault;
 
 import excel.ExcelPrinter;
+import excel.ExcelReader;
 import heptathlon.Hep100MHurdles;
 import heptathlon.Hep200M;
 import heptathlon.Hep800M;
@@ -45,7 +47,9 @@ public class SelectDiscipline {
 	HeptLongJump hepLongJump = new HeptLongJump();
 	HeptShotPut hepShotPut = new HeptShotPut();
 	HeptJavelinThrow hepJavelinThrow = new HeptJavelinThrow();
-	
+
+
+
 	//Receive input	of selection of discipline.
 
 	public void inputSelection() {
@@ -119,7 +123,6 @@ public class SelectDiscipline {
 		case 17:
 			hepJavelinThrow.calculateResult(inputResult.enterResult());
 			break;
-		case 18:
 
 
 		default:

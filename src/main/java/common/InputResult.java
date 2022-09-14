@@ -1,5 +1,7 @@
 package common;
 
+import excel.ExcelPrinter;
+
 import java.util.Scanner;
 
 public class InputResult {

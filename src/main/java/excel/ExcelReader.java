@@ -14,7 +14,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class ExcelReader {
 	
 	public String getCellInfo(String excelName, int sheetNumber, int rowNumber, int colNumber) throws IOException {
-		File excelfile = new File("C:/Eclipse/resultat_" + excelName + ".xlsx");
+		File excelfile = new File("/Users/inaco/Desktop/skola/excelouput" + excelName + ".xlsx");
 		FileInputStream fis = new FileInputStream(excelfile);
 		
 		@SuppressWarnings("resource")
