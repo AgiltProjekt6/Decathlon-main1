@@ -4,9 +4,13 @@ import excel.ExcelPrinter;
 
 import java.util.Scanner;
 
+
 public class InputResult {
+
+	//inputresult double istället för int så användaren kan retunera siffror med kommatecken.
 	double inputResult = 0;
 
+	//try catch kontrollerar så användare anger siffror och inte bokstäver eller specialtecken
 	public double enterResult() {
 		Scanner sc = new Scanner(System.in);
 		boolean active = true;
@@ -22,6 +26,8 @@ public class InputResult {
 			}
 
 		}
+
+		//retunerar double värdet från användarens input
 		return inputResult;
 	}
 
