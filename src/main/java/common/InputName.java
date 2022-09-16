@@ -3,12 +3,13 @@ package common;
 import java.util.Scanner;
 
 public class InputName {
-	String compName = "";
 
-	
 	//Add competitor
+	//en publik string som går att nå utanför klassen
 	public String addCompetitor() {
 
+		//boolean som reagerar på ett falsk eller korrekt beteende, i detta fall om scanner input innehåller bokstäver från a-ö.
+		// om det stämmer så skicka vidare input till string "compName" annars svara med "only use letters" texten nedan.
 		boolean active = true;
 		String compName = "";
 		Scanner sc = new Scanner(System.in);
@@ -24,7 +25,8 @@ public class InputName {
 				active = false;
 			}
 
-		} 
+		}
+		// retunerar användarens input
 		return compName;
 	} 
 }
