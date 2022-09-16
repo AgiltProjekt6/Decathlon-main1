@@ -1,8 +1,11 @@
 package common;
 
 import java.io.IOException;
+
+// scanner för input
 import java.util.Scanner;
 
+//importerade klasser som används i "SelectDiscipline"
 import decathlon.Deca100M;
 import decathlon.Deca1500M;
 import decathlon.Deca110MHurdles;
@@ -26,9 +29,12 @@ import heptathlon.HeptShotPut;
 
 public class SelectDiscipline {
 
+// Int för input, inputresultat metod & scanner för input
 	int disciplineSelected;
 	InputResult inputResult = new InputResult();
 	Scanner sc = new Scanner(System.in);
+
+// kallar på metoderna för alla grenar beroende på input val till switch case
 	Deca100M deca100M = new Deca100M();
 	Deca400M deca400M = new Deca400M();
 	Deca110MHurdles deca110MHurdles = new Deca110MHurdles();
@@ -52,6 +58,9 @@ public class SelectDiscipline {
 
 	//Receive input	of selection of discipline.
 
+	// tar emot input för switch case och kör try catch Exception för att kontrollera så input inte innehåller
+	// något annat än siffror.
+
 	public void inputSelection() {
 		System.out.println("Select discipline.");
 		printDisciplines();
@@ -70,6 +79,7 @@ public class SelectDiscipline {
 	}
 
 	// Check input of discipline.
+	// switch case valet beroende på input.
 	public void makeSelection() {
 		switch (disciplineSelected) {
 		case 1:
@@ -124,7 +134,7 @@ public class SelectDiscipline {
 			hepJavelinThrow.calculateResult(inputResult.enterResult());
 			break;
 
-
+// default åtgärd om input inte innehåller en int
 		default:
 			System.out.println("Invalid input, try again.");
 			System.out.println("");
@@ -133,6 +143,7 @@ public class SelectDiscipline {
 		}
 	}
 
+	// output för switch case alternativ som användaren har att välja mellan
 	// Needs more stuff.
 	public void printDisciplines() {
 		System.out.println("1. Decathlon 100 meters. (Measured in seconds)");

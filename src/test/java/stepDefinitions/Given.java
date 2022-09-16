@@ -1,7 +1,5 @@
-/*package stepDefinitions;
+package stepDefinitions;
 
 public @interface Given {
 
 }
-
- */

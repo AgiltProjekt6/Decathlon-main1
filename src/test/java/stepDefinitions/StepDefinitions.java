@@ -1,7 +1,5 @@
-/*
 package stepDefinitions;
 
-import common.*;
 import decathlon.*;
 import static org.junit.Assert.*;
 
@@ -34,5 +32,3 @@ public class StepDefinitions {
 	}
 
 }
-
- */

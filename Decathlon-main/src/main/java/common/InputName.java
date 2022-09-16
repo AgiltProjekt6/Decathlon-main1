@@ -6,7 +6,7 @@ public class InputName {
 	//String compName = "";
 	//compName compName = new compName();
 
-	
+
 	//Add competitor
 	public String addCompetitor() {
 
@@ -17,7 +17,7 @@ public class InputName {
 		while (active) {
 			System.out.println("Please enter the competitor's name:");
 			compName = sc.nextLine();
-			if (!compName.matches(".*[a-�A-�]")) {
+			if (!compName.matches(".*[a-ö-A-Ö]")) {
 				System.out.println("Only use letters when putting in competitors name.");
 
 			} else {
