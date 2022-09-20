@@ -3,16 +3,17 @@ package excel;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
+// användning av Apache Poi ett API för att skriva och läsa excelfiler så som XM.
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-
 public class ExcelPrinter {
 
 	private XSSFWorkbook workbook;
 	private String excelName;
+
 
 	public ExcelPrinter(String name) throws IOException {
 		workbook = new XSSFWorkbook();
