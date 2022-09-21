@@ -1,6 +1,7 @@
 package common;
 
 import decathlon.*;
+import excel.ExcelPrinter;
 
 public class Main {
 
@@ -13,6 +14,8 @@ public class Main {
 
 			SelectDiscipline selectDiscipline = new SelectDiscipline();
 			selectDiscipline.inputSelection();
+
+
 
 		}
 		choice = false;

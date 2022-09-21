@@ -3,7 +3,7 @@ package excel;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-// användning av Apache Poi ett API för att skriva och läsa excelfiler så som XM.
+// användning av Apache Poi, ett importerat API för att skriva och läsa filer som excel kan hantera.
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;

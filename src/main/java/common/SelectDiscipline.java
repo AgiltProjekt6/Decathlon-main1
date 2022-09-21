@@ -26,6 +26,8 @@ import heptathlon.HeptHightJump;
 import heptathlon.HeptJavelinThrow;
 import heptathlon.HeptLongJump;
 import heptathlon.HeptShotPut;
+import io.cucumber.java.an.E;
+import org.apache.poi.ss.usermodel.Workbook;
 
 public class SelectDiscipline {
 
@@ -53,9 +55,7 @@ public class SelectDiscipline {
 	HeptLongJump hepLongJump = new HeptLongJump();
 	HeptShotPut hepShotPut = new HeptShotPut();
 	HeptJavelinThrow hepJavelinThrow = new HeptJavelinThrow();
-
-
-
+	
 	//Receive input	of selection of discipline.
 
 	// tar emot input för switch case och kör try catch Exception för att kontrollera så input inte innehåller
