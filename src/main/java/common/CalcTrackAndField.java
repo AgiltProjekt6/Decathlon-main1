@@ -6,10 +6,12 @@ public class CalcTrackAndField {
 
 	// Calculates height and distance for field discipline.
 
-	// Beräknar ett resultat baserat på höjd och distans för DeaDiscusThrow, DecaHighJump, DecaJavelinThrow,DecaLongJump, DecaPoleVault, DecaShotPut, HeptHighJump, HeptJavelinThrow, HeptLongJump, HeptShotPut
+	// Beräknar ett resultat baserat på höjd och distans för DecaDiscusThrow, DecaHighJump, DecaJavelinThrow,DecaLongJump, DecaPoleVault, DecaShotPut, HeptHighJump, HeptJavelinThrow, HeptLongJump, HeptShotPut
+
 	public int calculateField(double A, double B, double C, double distance) {
 		result = (int) (A * Math.pow((distance - B), C));
 		return result;
+
 	}
 
 	// Calculates height and distance for track discipline.
@@ -18,6 +20,7 @@ public class CalcTrackAndField {
 	public int calculateTrack(double A, double B, double C, double distance) {
 		result = (int) (A * Math.pow((B - distance), C));
 		return result;
+
 	}
 
 }

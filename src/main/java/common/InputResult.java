@@ -7,7 +7,6 @@ import java.util.Scanner;
 
 public class InputResult {
 
-	//inputresult double istället för int så användaren kan retunera siffror med kommatecken.
 	double inputResult = 0;
 
 	//try catch kontrollerar så användare anger siffror och inte bokstäver eller specialtecken
@@ -22,7 +21,7 @@ public class InputResult {
 				active = false;
 			} catch (Exception e) {
 				System.out.println("Invalid input, try again.");
-				
+
 			}
 
 		}
