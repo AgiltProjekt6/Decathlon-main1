@@ -4,6 +4,8 @@ import common.*;
 
 public class Deca110MHurdles {
 
+	public  int finalScore;
+
 	private int score;
 	private double A = 5.74352;
 	private double B = 28.5;
@@ -34,7 +36,11 @@ public class Deca110MHurdles {
 				System.out.println("Please enter numbers");
 			}
 		}
-		System.out.println("The result is " + score);
+
+		SelectDiscipline selectDiscipline = new SelectDiscipline();
+		selectDiscipline.inputSelection();
+		finalScore = score;
+		System.out.println("The result for Deca 100M Hurdles is " + finalScore);
 
 	}
 

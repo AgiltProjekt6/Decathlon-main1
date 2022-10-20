@@ -1,23 +1,25 @@
 package common;
 
-import decathlon.Deca100M;
-import io.cucumber.java.vi.Cho;
-import org.junit.Test;
+import org.apache.xmlbeans.soap.SOAPArrayType;
+import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayInputStream;
+import java.io.IOException;
 import java.io.InputStream;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.*;
+import static org.mockito.Mockito.*;
 
-public class SelectDisciplineTest {
+
+class SelectDisciplineTest {
 
     @Test
-    public void inputSelection() {
+    void inputSelection()  {
 
-        //kallar på metoden
-        SelectDiscipline testInput = new SelectDiscipline();
+        SelectDiscipline test = new SelectDiscipline();
 
-
+        test.inputSelection();
 
     }
 }

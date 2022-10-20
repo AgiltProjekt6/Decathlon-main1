@@ -24,9 +24,9 @@ public class InputName {
 
 				active = false;
 			}
-			
+
 		}
 		// retunerar användarens input
 		return compName;
-	} 
+	}
 }

@@ -1,8 +1,11 @@
 package decathlon;
 
 import common.*;
+import net.bytebuddy.asm.Advice;
 
 public class Deca100M {
+
+	public int finalScore;
 
 	private int score;
 	private double A = 25.4347;
@@ -37,7 +40,10 @@ public class Deca100M {
 			}
 		}
 
-		System.out.println("The result is " + score);
+		SelectDiscipline selectDiscipline = new SelectDiscipline();
+		selectDiscipline.inputSelection();
+		finalScore = score;
+		System.out.println("The result for Deca100M is " + finalScore);
 
 	}
 

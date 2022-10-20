@@ -4,6 +4,8 @@ import common.*;
 
 public class Deca400M {
 
+	public int finalScore;
+
 	private int score;
 	private double A = 1.53775;
 	private double B = 82;
@@ -36,7 +38,11 @@ public class Deca400M {
 				System.out.println("Please enter numbers");
 			}
 		}
-		System.out.println("The result is: " + score);
+
+		SelectDiscipline selectDiscipline = new SelectDiscipline();
+		selectDiscipline.inputSelection();
+		finalScore = score;
+		System.out.println("The result for Deca 400M is " + finalScore);
 
 	}
 

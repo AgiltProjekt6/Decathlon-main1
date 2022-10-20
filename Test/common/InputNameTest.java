@@ -4,8 +4,6 @@ import org.junit.Test;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
-import java.nio.charset.StandardCharsets;
-import java.util.Scanner;
 
 import static org.junit.Assert.*;
 
@@ -29,9 +27,11 @@ public class InputNameTest {
         InputName testInput = new InputName();
 
         String CompetitorName = "johan10";
+
         InputStream in = new ByteArrayInputStream(CompetitorName.getBytes());
+
         System.setIn(in);
-        assertEquals("johan", testInput.addCompetitor());
+        assertEquals("Only use letters when putting in competitors name.", testInput.addCompetitor());
 
 
     }
