@@ -42,7 +42,7 @@ public class Deca400M {
 		SelectDiscipline selectDiscipline = new SelectDiscipline();
 		selectDiscipline.inputSelection();
 		finalScore = score;
-		System.out.println("The result for Deca 400M is " + finalScore);
+		System.out.println("The result for Deca 400M is: " + finalScore + " points");
 
 	}
 

@@ -40,7 +40,7 @@ public class Deca110MHurdles {
 		SelectDiscipline selectDiscipline = new SelectDiscipline();
 		selectDiscipline.inputSelection();
 		finalScore = score;
-		System.out.println("The result for Deca 100M Hurdles is " + finalScore);
+		System.out.println("The result for Deca 100M Hurdles is: " + finalScore + " points");
 
 	}
 

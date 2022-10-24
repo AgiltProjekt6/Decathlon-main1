@@ -43,7 +43,7 @@ public class Deca100M {
 		SelectDiscipline selectDiscipline = new SelectDiscipline();
 		selectDiscipline.inputSelection();
 		finalScore = score;
-		System.out.println("The result for Deca100M is " + finalScore);
+		System.out.println("The result for Deca100M is: " + finalScore + " points");
 
 	}
 
